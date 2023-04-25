@@ -10,11 +10,11 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Usertable />} />
-        <Route path="/2" element={<UserTable2 />} />
-        <Route path="/3" element={<UserTable3 />} />
-        <Route path="/4" element={<UserTable4 />} />
-        <Route path="/5" element={<UserTable5 />} />
+        <Route path="/users1" element={<Usertable />} />
+        <Route path="/users2" element={<UserTable2 />} />
+        <Route path="/users3" element={<UserTable3 />} />
+        <Route path="/users4" element={<UserTable4 />} />
+        <Route path="/users5" element={<UserTable5 />} />
       </Routes>
     </div>
   );

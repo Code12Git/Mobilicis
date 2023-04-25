@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -19,31 +20,52 @@ const Navbar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto flex align-items-center gap-2 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">
+              <NavLink
+                style={{ textDecoration: "none", color: "red" }}
+                class="nav-link active "
+                aria-current="page"
+                to="/users1"
+              >
                 1
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/2">
+              <NavLink
+                style={{ textDecoration: "none", color: "red" }}
+                class="nav-link active  "
+                to="/users2"
+              >
                 2
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/3">
+              <NavLink
+                style={{ textDecoration: "none", color: "red" }}
+                class="nav-link active  "
+                to="/users3"
+              >
                 3
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/4">
+              <NavLink
+                style={{ textDecoration: "none", color: "red" }}
+                class="nav-link active  "
+                to="/users4"
+              >
                 4
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/5">
+              <NavLink
+                style={{ textDecoration: "none", color: "red" }}
+                class="nav-link active  "
+                to="/users5"
+              >
                 5
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
